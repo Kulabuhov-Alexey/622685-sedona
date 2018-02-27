@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алексей Кулабухов](https://up.htmlacademy.ru/htmlcss/20/user/622685).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/amator).
 
 ---
 
