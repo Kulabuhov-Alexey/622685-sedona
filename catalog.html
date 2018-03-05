@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="main-header">
+      <a class="main-header-logo" href="index.html">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Седона">
+      </a>
       <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Седона">
-        </a>
         <ul class="site-navigation">
           <li><a href="#">информация</a></li>
           <li><a href="#">фото и видео</a></li>
@@ -26,13 +26,13 @@
       <section class="sort">
         <h2 class="visually-hidden">сортировка найденного</h2>
         <span>найдено: 3</span>
-        <h3 class="sort-title">сортировка :</h3>
+        <span>сортировка :</span>
           <ul class="sort-types">
-            <li class="sort-type"><span class="button sort-button sort-button-price">по цене</span></li>
-            <li class="sort-type"><span class="button sort-button sort-button-type">по типу</span></li>
-            <li class="sort-type"><span class="button sort-button sort-button-rate">по рейтингу</span></li>
-            <li class="sort-type"><span class="button sort-button sort-button-ascending"></span></li>
-            <li class="sort-type"><span class="button sort-button sort-button-descendingly"></span></li>
+            <li class="sort-type"><a class="sort-price">по цене</a></li>
+            <li class="sort-type"><a class="sorttype" href="#">по типу</a></li>
+            <li class="sort-type"><a class="sort-rate" href="#">по рейтингу</a></li>
+            <li class="sort-type"><a class="sort-descendingly"></a></li>
+            <li class="sort-type"><a class="sort-ascending" href="#"></a></li>
           </ul>
       </section>
       <section class="catalog">
@@ -46,7 +46,12 @@
             <a class="button" href="#">подробнее</a>
             <a class="button" href="#">забронировать</a>
             <span class="catalog-item-rate">рейтинг: 8,5</span>
-            <span class="stars"></span>
+            <ul class="stars">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
           </li>
           <li class="catalog-item">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото Desert Quail Inn">
@@ -56,7 +61,11 @@
             <a class="button" href="#">подробнее</a>
             <a class="button" href="#">забронировать</a>
             <span class="catalog-item-rate">рейтинг: 8,9</span>
-            <span class="stars"></span>
+            <ul class="stars">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
           </li>
           <li class="catalog-item">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото Villas at Poco Diablo">
@@ -66,7 +75,10 @@
             <a class="button" href="#">подробнее</a>
             <a class="button" href="#">забронировать</a>
             <span class="catalog-item-rate">рейтинг: 9,2</span>
-            <span class="stars"></span>
+            <ul class="stars">
+              <li></li>
+              <li></li>
+            </ul>
           </li>
         </ul>
       </section>
