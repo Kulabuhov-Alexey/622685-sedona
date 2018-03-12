@@ -21,18 +21,66 @@
     <main class="container">
       <section class="filter">
         <h2 class="visually-hidden">фильтр гостиниц</h2>
-        <!--place for form -->
+        <form class="filter-search" method="get" action="#"  oninput="priceoutput.value=priceinput.value">
+          <fieldset>
+            <legend>инфраструктура:</legend>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-pool" checked>
+              <label for="filter-pool">бассейн</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california"id="filter-parking" >
+                <label for="filter-parking">парковка</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california"id="filter-wifi" >
+                <label for="filter-wifi">wi-fi</label>
+            </li>
+          </fieldset>
+          <fieldset>
+            <legend>тип жилья:</legend>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-hotel" checked>
+                <label for="filter-hotel">гостиница</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-motel" checked>
+                <label for="filter-motel">мотель</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-appartment" checked>
+                <label for="filter-appartment">аппартаменты</label>
+            </li>
+          </fieldset>
+          <fieldset>
+            <legend>стоимость в сутки (р):</legend>
+            <label>
+              <!--javascript-->
+            </label>
+            <button class="search-btn" type="submit">показать</button>
+          </fieldset>
+        </form>
       </section>
       <section class="sort">
         <h2 class="visually-hidden">сортировка найденного</h2>
         <span>найдено: 3</span>
         <span>сортировка :</span>
           <ul class="sort-types">
-            <li class="sort-type"><a class="sort-price">по цене</a></li>
-            <li class="sort-type"><a class="sorttype" href="#">по типу</a></li>
-            <li class="sort-type"><a class="sort-rate" href="#">по рейтингу</a></li>
-            <li class="sort-type"><a class="sort-descendingly"></a></li>
-            <li class="sort-type"><a class="sort-ascending" href="#"></a></li>
+            <li class="sort-type">
+              <a class="sort-price">по цене</a>
+            </li>
+            <li class="sort-type">
+              <a class="sorttype" href="#">по типу</a>
+            </li>
+            <li class="sort-type">
+              <a class="sort-rate" href="#">по рейтингу</a>
+            </li>
+            <li class="sort-type">
+              <a class="sort-descendingly" href="#">Отсортировать по убыванию цены</a>
+            </li>
+            <li class="sort-type">
+              <a class="sort-ascending" href="#">Отсортировать по возрастанию цены</a>
+            </li>
           </ul>
       </section>
       <section class="catalog">
