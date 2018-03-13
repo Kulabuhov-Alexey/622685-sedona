@@ -24,33 +24,37 @@
         <form class="filter-search" method="get" action="#"  oninput="priceoutput.value=priceinput.value">
           <fieldset>
             <legend>инфраструктура:</legend>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-pool" checked>
-              <label for="filter-pool">бассейн</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california"id="filter-parking" >
-                <label for="filter-parking">парковка</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california"id="filter-wifi" >
-                <label for="filter-wifi">wi-fi</label>
-            </li>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-pool" checked>
+                <label for="filter-pool">бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california"id="filter-parking" >
+                  <label for="filter-parking">парковка</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california"id="filter-wifi" >
+                  <label for="filter-wifi">wi-fi</label>
+                </li>
+              </ul>
           </fieldset>
           <fieldset>
             <legend>тип жилья:</legend>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-hotel" checked>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-hotel" checked>
                 <label for="filter-hotel">гостиница</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-motel" checked>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-motel" checked>
                 <label for="filter-motel">мотель</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-appartment" checked>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-appartment" checked>
                 <label for="filter-appartment">аппартаменты</label>
-            </li>
+              </li>
+            </ul>
           </fieldset>
           <fieldset>
             <legend>стоимость в сутки (р):</legend>
@@ -65,23 +69,23 @@
         <h2 class="visually-hidden">сортировка найденного</h2>
         <span>найдено: 3</span>
         <span>сортировка :</span>
-          <ul class="sort-types">
-            <li class="sort-type">
-              <a class="sort-price">по цене</a>
-            </li>
-            <li class="sort-type">
-              <a class="sorttype" href="#">по типу</a>
-            </li>
-            <li class="sort-type">
-              <a class="sort-rate" href="#">по рейтингу</a>
-            </li>
-            <li class="sort-type">
-              <a class="sort-descendingly" href="#">Отсортировать по убыванию цены</a>
-            </li>
-            <li class="sort-type">
-              <a class="sort-ascending" href="#">Отсортировать по возрастанию цены</a>
-            </li>
-          </ul>
+        <ul class="sort-types">
+          <li class="sort-type">
+            <a class="sort-price">по цене</a>
+          </li>
+          <li class="sort-type">
+            <a class="sorttype" href="#">по типу</a>
+          </li>
+          <li class="sort-type">
+            <a class="sort-rate" href="#">по рейтингу</a>
+          </li>
+          <li class="sort-type">
+            <a class="sort-descendingly" href="#">Отсортировать по убыванию цены</a>
+          </li>
+          <li class="sort-type">
+            <a class="sort-ascending" href="#">Отсортировать по возрастанию цены</a>
+          </li>
+        </ul>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">список найденных гостиниц</h2>
