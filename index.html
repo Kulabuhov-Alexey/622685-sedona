@@ -11,36 +11,44 @@
 
 <body>
   <header class="main-header">
-    <a class="main-header-logo">
-      <img src="img/logo.png" width="138" height="70" alt="Седона">
-    </a>
     <nav class="main-navigation">
-      <ul class="site-navigation">
+      <a class="main-header-logo">
+        <img src="img/logo.png" width="138" height="70" alt="Седона">
+      </a>
+      <ul class="site-navigation left">
         <li><a class="noactive" href="#">Информация</a></li>
         <li><a class="noactive" href="#">Фото и видео</a></li>
+      </ul>
+      <ul class="site-navigation right">
         <li><a class="noactive" href="#">Карта штата</a></li>
         <li><a class="noactive" href="#">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
   <main class="container">
-    <img src="img/Sedona-welcome.jpg" width="1200" height="568" alt="Добро пожаловать в Седону!">
+    <img class="container-main-image" src="img/Sedona-welcome.jpg" width="1200" height="568" alt="Добро пожаловать в Седону!">
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <div class="features-title">
-        <p>Седона-небольшой городок в аризоне, заслуживающий большего!</p>
-        <p class="features-title-intro">Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <p class="features-title-intro1">Седона-небольшой городок в аризоне, заслуживающий большего!</p>
+        <p class="features-title-intro2">Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <ul class="features-list">
-        <li class="feature-item-blueback">
+        <li class="feature-item-blueback first">
+        <div>
           <h3>Настоящий городок</h3>
           <p>- №1 -</p>
-              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+          <img src="img/city-photo.jpg" width="800" height="256" alt="Седона">
         </li>
-        <li class="feature-item-blueback">
-          <h3>Там есть<br>мост дьявола</h3>
-          <p>- №2 -</p>
-          <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
+        <li class="feature-item-blueback second">
+          <div>
+            <h3>Там есть<br>мост дьявола</h3>
+            <p>- №2 -</p>
+            <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
+          </div>
+          <img src="img/bridge-photo.jpg" width="800" height="256" alt="Мост дьявола">
         </li>
         <li class="feature-item">
           <h3>Небольшая площадь</h3>
@@ -57,22 +65,24 @@
           <p>- №5 -</p>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
-      </ul>
-    </section>
-    <section class="adwises">
-      <h2 class="visually-hidden">Советы туристам</h2>
-      <ul class="adwises-list">
-        <li class="adwise-item">
-          <h3>Жилье</h3>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </li>
-        <li class="adwise-item">
-          <h3>Еда</h3>
-          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li class="adwise-item">
-          <h3>Сувениры</h3>
-          <p>Не только китайского, но и местного производства!</p>
+        <li class="adwise">
+          <ul class="adwise-list">
+            <li class="adwise-item">
+              <span class="img-house"></span>
+              <h3>Жилье</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="adwise-item">
+              <span class="img-food"></span>
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="adwise-item">
+              <span class="img-present"></span>
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
         </li>
       </ul>
     </section>
@@ -106,7 +116,7 @@
         </p>
         <button class="button-index" type="submit">Найти</button>
       </form>
-      <img src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
+      <img class="map" src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
     </section>
   </main>
   <footer class="main-footer">
@@ -116,6 +126,7 @@
       <a class="button-index" href="#">Facebook</a>
       <a class="button-index" href="#">Youtube</a>
     </div>
+    <span>Website by</span>
     <a class="main-footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
   </footer>
 </body>

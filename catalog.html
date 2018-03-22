@@ -11,15 +11,17 @@
 
 <body>
   <header class="main-header">
-    <a class="main-header-logo" href="index.html">
-      <img src="img/logo.png" width="138" height="70" alt="Седона">
-    </a>
     <nav class="main-navigation">
-      <ul class="site-navigation">
+      <a class="main-header-logo">
+        <img src="img/logo.png" width="138" height="70" alt="Седона">
+      </a>
+      <ul class="site-navigation left">
         <li><a class="noactive" href="#">Информация</a></li>
         <li><a class="noactive" href="#">Фото и видео</a></li>
+      </ul>
+      <ul class="site-navigation right">
         <li><a class="noactive" href="#">Карта штата</a></li>
-        <li><a class="active">Гостиницы</a></li>
+        <li><a class="noactive" href="#">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -97,45 +99,69 @@
       <ul>
         <li class="catalog-item">
           <img src="img/hotel-1.jpg" width="135" height="90" alt="Фото Amara resort &#38; spa">
-          <a class="catalog-item-name" href="#">Amara resort &#38; spa</a>
-          <span class="catalog-item-type">Гостиница</span>
-          <span class="catalog-item-price">От 4000 р.</span>
-          <a class="catalog-item-about" href="#">Подробнее</a>
-          <a class="catalog-item-rent" href="#">Забронировать</a>
-          <span class="catalog-item-rate">Рейтинг: 8,5</span>
-          <ul class="stars">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <div class="item-wrap">
+            <a class="catalog-item-name" href="#">Amara resort &#38; spa</a>
+            <div>
+              <span class="catalog-item-type">Гостиница</span>
+              <span class="catalog-item-price">От 4000 р.</span>
+            </div>
+            <div>
+              <a class="catalog-item-about" href="#">Подробнее</a>
+              <a class="catalog-item-rent" href="#">Забронировать</a>
+            </div>
+          </div>
+          <div class="rate-wrap">
+            <span class="catalog-item-rate">Рейтинг: 8,5</span>
+            <ul class="stars">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </li>
         <li class="catalog-item">
           <img src="img/hotel-2.jpg" width="135" height="90" alt="Фото Desert Quail Inn">
-          <a class="catalog-item-name" href="#">Desert Quail Inn</a>
-          <span class="catalog-item-type">Мотель</span>
-          <span class="catalog-item-price">От 3000 р.</span>
-          <a class="catalog-item-about" href="#">Подробнее</a>
-          <a class="catalog-item-rent" href="#">Забронировать</a>
-          <span class="catalog-item-rate">Рейтинг: 8,9</span>
-          <ul class="stars">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <div class="item-wrap">
+            <a class="catalog-item-name" href="#">Desert Quail Inn</a>
+            <div>
+              <span class="catalog-item-type">Мотель</span>
+              <span class="catalog-item-price">От 3000 р.</span>
+            </div>
+            <div>
+              <a class="catalog-item-about" href="#">Подробнее</a>
+              <a class="catalog-item-rent" href="#">Забронировать</a>
+            </div>
+          </div>
+          <div class="rate-wrap">
+            <span class="catalog-item-rate">Рейтинг: 8,9</span>
+            <ul class="stars">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </li>
         <li class="catalog-item">
           <img src="img/hotel-3.jpg" width="135" height="90" alt="Фото Villas at Poco Diablo">
-          <a class="catalog-item-name" href="#">Villas at Poco Diablo</a>
-          <span class="catalog-item-type">Аппартаменты</span>
-          <span class="catalog-item-price">От 2000 р.</span>
-          <a class="catalog-item-about" href="#">Подробнее</a>
-          <a class="catalog-item-rent" href="#">Забронировать</a>
-          <span class="catalog-item-rate">Рейтинг: 9,2</span>
-          <ul class="stars">
-            <li></li>
-            <li></li>
-          </ul>
+          <div class="item-wrap">
+            <a class="catalog-item-name" href="#">Villas at Poco Diablo</a>
+            <div>
+              <span class="catalog-item-type">Аппартаменты</span>
+              <span class="catalog-item-price">От 2000 р.</span>
+            </div>
+            <div>
+              <a class="catalog-item-about" href="#">Подробнее</a>
+              <a class="catalog-item-rent" href="#">Забронировать</a>
+            </div>
+          </div>
+          <div class="rate-wrap">
+            <span class="catalog-item-rate">Рейтинг: 9,2</span>
+            <ul class="stars">
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </li>
       </ul>
     </section>
@@ -147,6 +173,7 @@
       <a class="button-index" href="#">Facebook</a>
       <a class="button-index" href="#">Youtube</a>
     </div>
+    <span>Website by</span>
     <a class="main-footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
   </footer>
 </body>
