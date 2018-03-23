@@ -54,15 +54,15 @@ fieldset ul,
   margin-bottom: 50px;
 }
 
-.main-header-logo{
+.main-header-logo {
   order: 1;
 }
-a.main-header-logo{
+a.main-header-logo {
   line-height: 0;
   font-size: 0;
 }
 
-.right {
+.site-navigation-right {
   order: 2;
   padding: 0;
   margin: 0;
@@ -73,7 +73,7 @@ a.main-header-logo{
   padding-top: 20px;
 }
 
-.left {
+.site-navigation-left {
   padding: 0;
   margin: 0;
   display: flex;
@@ -83,26 +83,28 @@ a.main-header-logo{
   padding-top: 20px;
 }
 
-.noactive {
+.site-navigation-item {
   color: #000;
   font-weight: 700;
 }
 
-.noactive:hover {
+.site-navigation-item:hover {
   color: #81b3d2;
 }
 
-.noactive:active {
+.site-navigation-item:active {
   color: #000;
   opacity: 0.3;
 }
 
-.noactive:focus, .active {
+.site-navigation-item:focus,
+.active,
+.active:hover {
   color: #766357;
   font-weight: 700
 }
 
-p.features-title-intro1{
+.features-title-introhead {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -113,7 +115,7 @@ p.features-title-intro1{
   margin-bottom: 30px;
 }
 
-p.features-title-intro2 {
+.features-title-introbody {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -123,7 +125,7 @@ p.features-title-intro2 {
   margin-bottom: 50px;
 }
 
-.features-list{
+.features-list {
   list-style: none;
   line-height: 21px;
   margin: auto;
@@ -136,32 +138,24 @@ p.features-title-intro2 {
   justify-content: center;
 }
 
-.feature-item-blueback.first {
+.feature-item-blueback {
   display: flex;
   flex-direction: row;
   height: 256px;
   min-width: 1200px;
   align-items: center;
   order: -2;
+  background-color: rgb(129, 179, 210);
+  color: #fff;
 }
 
-.feature-item-blueback.first h3 {
+.feature-item-blueback h3 {
   min-width: 140px;
 }
 
-.feature-item-blueback.second {
-  display: flex;
+.feature-item-blueback-reverse {
   flex-direction: row-reverse;
-  height: 256px;
-  min-width: 1200px;
-  align-items: center;
-}
-
-.feature-item-blueback.first,
-.feature-item-blueback.second
-{
-  background-color: rgb(129, 179, 210);
-  color: #fff;
+  order: 0;
 }
 
 .features-list li.feature-item {
@@ -210,7 +204,7 @@ li.adwise-item {
   margin: auto;
 }
 
-.features-list h3{
+.features-list h3 {
   font-size: 21px;
   line-height: 21px;
   margin: 0;
@@ -346,7 +340,7 @@ a.main-footer-logo:active {
   font-weight: 700;
 }
 
-fieldset{
+fieldset {
 border: none;
 }
 
