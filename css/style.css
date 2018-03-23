@@ -43,7 +43,7 @@ fieldset ul,
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: -14px;
+  height: 56px;
 }
 
 .container-main-image {
@@ -55,29 +55,16 @@ fieldset ul,
 }
 
 .main-header-logo {
-  order: 1;
-}
-a.main-header-logo {
+  position: absolute;
   line-height: 0;
   font-size: 0;
 }
 
-.site-navigation-right {
-  order: 2;
+.site-navigation{
   padding: 0;
   margin: 0;
   display: flex;
-  width: 531px;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding-top: 20px;
-}
-
-.site-navigation-left {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  width: 531px;
+  width: 1200px;
   justify-content: space-around;
   align-items: flex-start;
   padding-top: 20px;
@@ -140,7 +127,6 @@ a.main-header-logo {
 
 .feature-item-blueback {
   display: flex;
-  flex-direction: row;
   height: 256px;
   min-width: 1200px;
   align-items: center;
@@ -158,10 +144,19 @@ a.main-header-logo {
   order: 0;
 }
 
-.features-list li.feature-item {
+.feature-item-grayback {
   background-color: rgb(238, 238, 238);
+}
+
+.feature-item-grayback-list{
+  width: 1200px;
+  height: 256px;
   margin: 0;
   padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .adwise {
@@ -173,7 +168,8 @@ a.main-header-logo {
   padding: 0;
   background-color: #fff;
   display: flex;
-  flex-direction: row;
+  height: 330px;
+  align-items: center;
 }
 
 li.adwise-item {
