@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -8,8 +8,8 @@ body {
   color: #000;
   text-transform: uppercase;
   text-align: center;
-  background-color: #fff;
-  min-width: 1280px;
+  background-color: #f2f2f2;
+  min-width: 1200px;
   min-height: 2762px;
 }
 
@@ -17,12 +17,24 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-navigation {
@@ -38,12 +50,10 @@ fieldset ul,
 }
 
 .main-navigation {
-  margin: 0;
+  margin: auto;
   padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   height: 56px;
+  width: 1200px;
 }
 
 .container-main-image {
@@ -58,21 +68,48 @@ fieldset ul,
   position: absolute;
   line-height: 0;
   font-size: 0;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
 }
 
 .site-navigation{
-  padding: 0;
-  margin: 0;
+  margin: auto;
   display: flex;
   width: 1200px;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding-top: 20px;
+  padding: 0;
+  padding-top: 14px;
+  flex-wrap: wrap;
 }
 
 .site-navigation-item {
   color: #000;
+  display: block;
   font-weight: 700;
+  width: 300px;
+}
+
+.site-navigation-item-information {
+  padding-left: 72px;
+  width: 228px;
+  text-align: left;
+}
+
+.site-navigation-item-photo {
+  padding-left: 12px;
+  width: 288px;
+  text-align: left;
+}
+
+.site-navigation-item-map {
+  padding-right: 12px;
+  width: 288px;
+  text-align: right;
+}
+
+.site-navigation-item-hotels {
+  padding-right:72px;
+  width: 228px;
+  text-align: right;
 }
 
 .site-navigation-item:hover {
@@ -117,12 +154,7 @@ fieldset ul,
   line-height: 21px;
   margin: auto;
   padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
   width: 1200px;
-  justify-content: center;
 }
 
 .feature-item-blueback {
@@ -130,7 +162,6 @@ fieldset ul,
   height: 256px;
   min-width: 1200px;
   align-items: center;
-  order: -2;
   background-color: rgb(129, 179, 210);
   color: #fff;
 }
@@ -141,7 +172,6 @@ fieldset ul,
 
 .feature-item-blueback-reverse {
   flex-direction: row-reverse;
-  order: 0;
 }
 
 .feature-item-grayback {
@@ -161,7 +191,6 @@ fieldset ul,
 
 .adwise {
   background-color: #fff;
-  order: -1;
 }
 
 .adwise-list {
