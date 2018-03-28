@@ -27,7 +27,7 @@
     <section class="filter">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <form class="filter-search" method="get" action="#" oninput="priceoutput.value=priceinput.value">
-        <fieldset>
+        <fieldset class="filter-search-infrastructure">
           <legend>Инфраструктура:</legend>
           <ul>
             <li class="filter-option">
@@ -44,7 +44,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-search-type">
           <legend>Тип жилья:</legend>
           <ul>
             <li class="filter-option">
@@ -61,7 +61,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-search-price">
           <legend>Стоимость в сутки (р):</legend>
           <div class="price-controls">
             <label class="min-price">от <input type="text" name="min-price" value="0"></label>
