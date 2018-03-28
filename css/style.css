@@ -60,12 +60,13 @@ fieldset ul,
 }
 
 .container-main-image {
-  margin: 0;
+  margin: auto;
   padding-top: 78px;
   position: relative;
   z-index: -1;
   background: url("../img/main-header-background photo.jpg") no-repeat;
   background-position: 0 -57px;
+  display: block;
 }
 
 .main-header-logo {
@@ -724,18 +725,25 @@ border: none;
 
 .range-toggle {
   position: absolute;
-  top: -9px;
-  width: 4px;
-  height: 4px;
-  background: #ababab;
-  border: 8px solid #ffffff;
+  top: -10px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/filter-button.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  background-image: url("../img/filter-button-hover.svg");
+  top: -14px;
+  width: 30px;
+  height: 30px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .range-toggle-min {
