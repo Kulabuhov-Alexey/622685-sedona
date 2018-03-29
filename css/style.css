@@ -557,13 +557,13 @@ button.search-count:focus {
 
 .main-footer {
   display: flex;
-  justify-content: space-around;
   width: 1200px;
   align-items: center;
   min-height: 123px;
-  margin: auto;
+  margin: 0 auto;
   background-color: rgb(255, 255, 255);
-  justify-content: flex-start;
+  padding: 40px 0;
+  box-sizing: border-box;
 }
 
 .footer-academy-wrap {
@@ -757,6 +757,7 @@ fieldset {
   font: inherit;
   background: none;
   border: none;
+  padding: 1px 0 7px 0;
 }
 
 .min-price {
@@ -983,7 +984,7 @@ fieldset {
   width: 1200px;
   align-items: center;
   border-top: 1px solid #e5e5e5;
-  padding: 0 72px;
+  padding: 30px 72px;
   box-sizing: border-box;
 }
 
