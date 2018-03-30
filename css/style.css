@@ -80,7 +80,7 @@ fieldset ul,
   height: 70px;
 }
 
-.site-navigation{
+.site-navigation {
   margin: auto;
   display: flex;
   max-width: 1200px;
@@ -179,7 +179,7 @@ fieldset ul,
   margin-bottom: 20px;
 }
 
-.feature-item-blueback div{
+.feature-item-blueback div {
   width: 400px;
 }
 
@@ -205,7 +205,7 @@ fieldset ul,
   background-color: rgb(238, 238, 238);
 }
 
-.feature-item-grayback-list{
+.feature-item-grayback-list {
   width: 1200px;
   height: 256px;
   margin: 0;
@@ -274,7 +274,7 @@ fieldset ul,
   padding-right: 54px;
 }
 
-.adwise-item-food h3{
+.adwise-item-food h3 {
   padding-top: 34px;
 }
 
@@ -283,7 +283,7 @@ fieldset ul,
   padding-right: 64px;
 }
 
-.adwise-item-present h3{
+.adwise-item-present h3 {
   padding-top: 28px;
   padding-bottom: 27px;
 }
@@ -423,8 +423,7 @@ fieldset ul,
 .search-item-date:hover + .search-item-date-btn,
 .search-item-date:hover + .search-item-date-out-btn,
 .search-item-date-btn:hover,
-.search-item-date-out-btn:hover
- {
+.search-item-date-out-btn:hover {
   background-image: url("../img/calendar-hover.svg");
   border: 0;
   outline-width: 0;
@@ -433,8 +432,7 @@ fieldset ul,
 .search-item-date:focus + .search-item-date-btn,
 .search-item-date:focus + .search-item-date-out-btn,
 .search-item-date-btn:focus,
-.search-item-date-out-btn:focus
- {
+.search-item-date-out-btn:focus {
   background-image: url("../img/calendar-active.svg");
   border: 0;
   outline-width: 0;
@@ -676,7 +674,6 @@ fieldset {
 .filter-search ul {
   margin: 0;
   padding: 0;
-
 }
 
 .filter-option input[type="checkbox"] + label::before {
@@ -690,8 +687,16 @@ fieldset {
   background-size: auto;
 }
 
-.filter-option input[checked] + label::before {
+.filter-option input[type="checkbox"]:checked + label::before {
   background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.filter-option input[disabled]:checked + label::before {
+  background: url("../img/checkbox-blockon.svg") no-repeat;
+}
+
+.filter-option input[disabled] + label::before {
+  background: url("../img/checkbox-blockoff.svg") no-repeat;
 }
 
 .filter-option {
@@ -702,7 +707,7 @@ fieldset {
 
 .filter-range {
   width: 330px;
-  margin: 50px auto; /* для демо */
+  margin: 50px auto;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -1042,17 +1047,16 @@ text-align: left;
   background-color: #fff;
 }
 
-.catalog-item-stars{
+.catalog-item-stars {
   display: flex;
   padding: 0;
   flex-direction: row-reverse;
 }
 
-.catalog-item-stars li{
+.catalog-item-stars li {
   background: url("../img/star.svg");
   width: 18px;
   height: 17px;
-
 }
 
 .catalog>ul {
@@ -1133,5 +1137,4 @@ text-align: left;
   width: 111px;
   height: 27px;
   text-align: center;
-
 }
